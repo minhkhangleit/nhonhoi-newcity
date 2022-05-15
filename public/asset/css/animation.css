@@ -1,0 +1,1297 @@
+.fadein,
+.fadeout {
+    animation-duration: 1s
+}
+
+@keyframes Start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@keyframes Preloader {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes Play {
+    from {
+        background-position: 0
+    }
+
+    to {
+        background-position: -360px
+    }
+}
+
+@keyframes Ani {
+    0% {
+        box-shadow: 0 0 0 rgba(220, 220, 220, 0);
+        border: 1px solid rgba(220, 220, 220, 0);
+        transform: scale(0)
+    }
+
+    70% {
+        box-shadow: 0 0 50px rgba(220, 220, 220, 1);
+        border: 1px solid rgba(220, 220, 220, 1);
+        transform: scale(1)
+    }
+
+    100% {
+        box-shadow: 0 0 60px rgba(220, 220, 220, 0);
+        border: 0 solid rgba(220, 220, 220, 0);
+        transform: scale(2)
+    }
+}
+
+@keyframes BgColor {
+    from {
+        background-color: rgba(0, 72, 53, 1)
+    }
+
+    to {
+        background-color: rgba(176, 92, 30, 1)
+    }
+}
+
+@keyframes Leftpage {
+    from {
+        left: -100%
+    }
+
+    to {
+        left: 100%
+    }
+}
+
+@keyframes Rotate {
+    from {
+        transform: rotate(0) translateZ(0)
+    }
+
+    to {
+        transform: rotate(360deg) translateZ(0)
+    }
+}
+
+@keyframes empty {
+    0% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg) scale(.5);
+        opacity: 0
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0) scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes flipOutX {
+    0% {
+        transform: perspective(400px) rotateX(0) scale(1);
+        opacity: 1
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(90deg) scale(.5);
+        opacity: 0
+    }
+}
+
+@keyframes scaleSmall {
+    0% {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes scaleLarge {
+    0% {
+        opacity: 0;
+        transform: scale(2)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes scaleLarge2 {
+    0% {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes trackBallSlide {
+
+    0%,
+    100%,
+    30%,
+    60% {
+        opacity: 1;
+        transform: translateY(-12px)
+    }
+
+    15%,
+    50% {
+        opacity: 0;
+        transform: translateY(8px)
+    }
+}
+
+@keyframes goHeight {
+    from {
+        transform: scale3d(1, 0, 1)
+    }
+
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes goWidth {
+    from {
+        transform: scale3d(0, 1, 1)
+    }
+
+    to {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes aniHeight {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+
+    to {
+        transform: scale3d(1, 0, 1)
+    }
+}
+
+@keyframes aniWidth {
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+
+    to {
+        transform: scale3d(0, 1, 1)
+    }
+}
+
+@keyframes moveLeft {
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes moveRight {
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes toRight {
+    0% {
+        opacity: 0;
+        right: -100px
+    }
+
+    100% {
+        opacity: 1;
+        right: 0
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        opacity: 0;
+        left: -100px
+    }
+
+    100% {
+        opacity: 1;
+        left: 0
+    }
+}
+
+@keyframes goRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes goLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@keyframes DrawStroke {
+    0% {
+        stroke-dashoffset: 1000
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes DrawStroke1 {
+    0% {
+        stroke-dashoffset: 2500
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes goBg {
+    0% {
+        transform: translate3d(-50%, 0, 0)
+    }
+
+    100% {
+        transform: none
+    }
+}
+
+@keyframes bounceInDown {
+
+    60%,
+    75%,
+    90%,
+    from,
+    to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0)
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0)
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0)
+    }
+
+    90% {
+        transform: translate3d(0, 5px, 0)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes Color2 {
+
+    0%,
+    60% {
+        background-color: #00431c
+    }
+
+    20% {
+        background-color: #b08a30
+    }
+}
+
+@keyframes Border {
+
+    0%,
+    60% {
+        border-top-color: #ffdd80
+    }
+
+    20% {
+        border-top-color: #117090
+    }
+}
+
+@keyframes Border1 {
+
+    0%,
+    60% {
+        border-color: #ffdd80
+    }
+
+    20% {
+        border-color: #117090
+    }
+}
+
+@keyframes Shake {
+
+    from,
+    to {
+        transform: translate3d(0, 0, 0) rotate(0)
+    }
+
+    0%,
+    50% {
+        transform: translate3d(-10px, 0, 0) rotate(15deg)
+    }
+
+    25% {
+        transform: translate3d(10px, 0, 0) rotate(-15deg)
+    }
+}
+
+@keyframes Bounce {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(0)
+    }
+
+    50% {
+        transform: translate3d(50px, 20px, 0) rotate(125deg)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) rotate(360deg)
+    }
+}
+
+@keyframes StrokeLine {
+    0% {
+        stroke-dashoffset: 0
+    }
+
+    100% {
+        stroke-dashoffset: -200
+    }
+}
+
+@keyframes StrokeLine1 {
+    0% {
+        stroke-dashoffset: 0
+    }
+
+    100% {
+        stroke-dashoffset: 200
+    }
+}
+
+@keyframes StrokeLine2 {
+    0% {
+        stroke-dashoffset: 0
+    }
+
+    100% {
+        stroke-dashoffset: 300
+    }
+}
+
+@keyframes BorderBox {
+
+    0%,
+    100% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+}
+
+@keyframes MaskPlay {
+    from {
+        mask-position: 0 0
+    }
+
+    to {
+        mask-position: 100% 0
+    }
+}
+
+@keyframes DrawStroke1 {
+    0% {
+        stroke-dashoffset: 8000
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+.fadein {
+    animation-name: fadeIn;
+    animation-fill-mode: forwards
+}
+
+.fadeout {
+    animation-name: fadeOut;
+    animation-fill-mode: forwards
+}
+
+.flipinx,
+.flipoutx {
+    animation-duration: .8s;
+    animation-fill-mode: forwards
+}
+
+.flipoutx {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipOutX
+}
+
+.flipinx {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX
+}
+
+.fadeindown,
+.fadeinup,
+.fadeoff,
+.fadeon {
+    animation-duration: 1s
+}
+
+.fadeindown {
+    animation-name: fadeInDown;
+    animation-fill-mode: forwards
+}
+
+.fadeinup {
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards
+}
+
+.fadeoff {
+    animation-name: fadeOff;
+    animation-fill-mode: forwards
+}
+
+.fadeon {
+    animation-name: fadeOn;
+    animation-fill-mode: forwards
+}
+
+.goleft,
+.goright {
+    animation-duration: .8s;
+    animation-fill-mode: forwards
+}
+
+.goleft {
+    animation-name: goLeft
+}
+
+.goright {
+    animation-name: goRight
+}
+
+.scalelarge {
+    animation: scaleLarge;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.moveleft,
+.moveright {
+    pointer-events: none;
+    animation-duration: .8s;
+    animation-fill-mode: forwards
+}
+
+.moveleft {
+    animation-name: moveLeft
+}
+
+.moveright {
+    animation-name: moveRight
+}
+
+.contact-form,
+.container,
+.footer,
+.go-top,
+.header,
+.register-form {
+    animation: Start 1s steps(1, end) 0s 1 normal both
+}
+
+.slide-fade-out {
+    animation: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.slide-fade-in {
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 10
+}
+
+.hotline,
+.load360,
+.logo,
+.nav-click,
+.subscribe,
+.title-page h1 {
+    opacity: 0
+}
+
+.show .load360 {
+    animation: goLeft;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards
+}
+
+@media screen and (min-width:1100px) {
+
+    .company-info::after,
+    .group-central[data-name=home-location] .content-main::after,
+    .group-central[data-name=location] .content-main::after,
+    .title-main h2::after,
+    .title-main h2::before,
+    .title-main-1 h2::after {
+        transform: scale3d(0, 1, 1)
+    }
+
+    .bg-cover::after,
+    .bg-cover::before,
+    .bg-home,
+    .bg-home::after,
+    .box-nav,
+    .close-video,
+    .grid-item-bg::after,
+    .grid-item-bg::before,
+    .sub-news {
+        opacity: 0
+    }
+
+    .box-nav.show,
+    .sub-news.show {
+        animation: toLeft;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .close-video.show {
+        animation: toRight;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .bg-home {
+        animation: scaleLarge2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central[data-name=home-news].show-text .bg-cover::before {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .bg-cover::after {
+        animation: fadeInUp;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .grid-item-bg::before {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .grid-item-bg::after {
+        animation: fadeInUp;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards
+    }
+
+    .grid-item-bg canvas.show {
+        animation: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .container::before {
+        opacity: 0;
+        transition: opacity .6s ease-in-out
+    }
+
+    .container.show::before {
+        opacity: 1
+    }
+
+    #location-page.show::before {
+        opacity: .3
+    }
+
+    .register-form .input-area,
+    .register-form .input-but,
+    .register-form .input-text,
+    .register-form .require-col,
+    .slogan::after,
+    .slogan::before {
+        opacity: 0
+    }
+
+    .show .hotline {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards
+    }
+
+    .show .subscribe {
+        animation: goRight;
+        animation-duration: 1s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards
+    }
+
+    .show .nav-click {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show .logo {
+        animation: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .title-page.on-show h1 {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .register-form.show .title-main {
+        animation: fadeInUp;
+        animation-duration: .6s;
+        animation-delay: 1.3s;
+        animation-fill-mode: forwards
+    }
+
+    .register-form.show .input-text {
+        animation: fadeInUp;
+        animation-duration: .6s;
+        animation-delay: 1.4s;
+        animation-fill-mode: forwards
+    }
+
+    .register-form.show .input-area {
+        animation: fadeInUp;
+        animation-duration: .6s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards
+    }
+
+    .register-form.show .input-but {
+        animation: fadeInUp;
+        animation-duration: .6s;
+        animation-delay: 1.6s;
+        animation-fill-mode: forwards
+    }
+
+    .register-form.show .require-col {
+        animation: fadeInUp;
+        animation-duration: 1.3s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .slogan::before {
+        animation: scaleLarge;
+        animation-duration: 1.2s;
+        animation-delay: .8s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .slogan::after {
+        animation: fadeInUp;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central .slide-buttons,
+    .group-central .slide-pagination {
+        opacity: 0;
+        transition: opacity .3s ease-in-out
+    }
+
+    .show-text .slide-buttons,
+    .show-text .slide-pagination {
+        opacity: 1
+    }
+
+    .slide-pics .txt-banner {
+        opacity: 0;
+        right: 0;
+        transition: all 2s cubic-bezier(.23, 1, .38, 1)
+    }
+
+    .slide-pics .active .txt-banner {
+        opacity: 1;
+        right: 10vw;
+        animation-delay: 1s
+    }
+
+    .all-dot-top .dot-num,
+    .box-a-main p,
+    .box-a-main::after,
+    .box-cover-right,
+    .box-facilities,
+    .box-txt h3,
+    .box-txt p,
+    .buttons,
+    .compass,
+    .copyright,
+    .group-central[data-name=library-video]::before,
+    .group-central[data-name=home-facilities]::before,
+    .group-central[data-name=about-investor]::before,
+    .group-central[data-name=about-developer]::before,
+    .group-central[data-name=about-facilities]::before,
+    .group-central[data-name=library-brochure]::before,
+    .group-central[data-name=library-album] .container-main::before,
+    .group-central[data-name=library-album]::before,
+    .item-news-home,
+    .logo-investor,
+    .note-color,
+    .note-facilities,
+    .pic-center,
+    .pointer-map,
+    .product-home,
+    .product-name,
+    .slider-1,
+    .slider-brochure,
+    .social,
+    .svg-bg,
+    .title-main,
+    .title-main-1,
+    .view-more {
+        opacity: 0
+    }
+
+    .show .copyright {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .show .social {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .title-main h2::after,
+    .show-text .title-main h2::before {
+        animation: goWidth;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .title-main {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .title-main-1 h2::after {
+        animation: goWidth;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .title-main-1 {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-txt h3 {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-txt p {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .4s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .view-more {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .product-home {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .item-news-home:nth-child(even) {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .item-news-home:nth-child(odd) {
+        animation: goRight;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central[data-name=home-facilities].show-text::after {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central[data-name=home-facilities].show-text::before {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-facilities {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .box-contact-main::after,
+    .company-info h3,
+    .company-info p,
+    .company-info span,
+    .group-central[data-name=contact]::before,
+    .item-logo,
+    .map-box,
+    .partner-info {
+        opacity: 0
+    }
+
+    .group-central[data-name=contact].show-text::before {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-contact-main::after {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .company-info::after {
+        animation: goWidth;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .company-info span {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .company-info h3 {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .company-info p {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .item-logo,
+    .show-text .partner-info {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .partner-info:nth-child(3) {
+        animation-delay: .6s
+    }
+
+    .partner-info:nth-child(4) {
+        animation-delay: .7s
+    }
+
+    .partner-info:nth-child(5) {
+        animation-delay: .8s
+    }
+
+    .partner-info:nth-child(6) {
+        animation-delay: .9s
+    }
+
+    .map-box.showup {
+        animation-name: goLeft;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-cover-right {
+        animation: scaleLarge;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .buttons {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .compass {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .pointer-map.show,
+    .show-text .pointer-map {
+        animation: bounceInDown;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central[data-name=home-location].show-text::after {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .group-central[data-name=home-location].show-text .content-main::after,
+    .group-central[data-name=location].show-text .content-main::after {
+        animation: goWidth;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .logo-investor {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-a-main p {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .svg-bg {
+        animation: fadeIn;
+        animation-duration: 1s;
+        animation-delay: .2s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text.group-central[data-name=about-investor]::before,
+    .show-text.group-central[data-name=about-developer]::before,
+    .show-text.group-central[data-name=about-facilities]::before {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .box-a-main::after {
+        animation: fadeIn;
+        animation-duration: 2s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .note-facilities {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .dot-num.show,
+    .show-text .note-color {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .7s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .dot-num.show span.circle {
+        animation: Ani 2s infinite
+    }
+
+    .show-text .product-name {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .point-01 .point,
+    .point-02 .point {
+        animation: BorderBox 3s infinite
+    }
+
+    .show-text.group-central[data-name=library-brochure]::before {
+        animation-name: scaleSmall;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .slider-brochure {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .7s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text.group-central[data-name=library-album] .container-main::before {
+        animation-name: scaleSmall;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text.group-central[data-name=library-album]::before {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: .6s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .slider-1 {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text.group-central[data-name=library-video]::before {
+        animation-name: scaleSmall;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show-text .pic-center {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .8s;
+        animation-fill-mode: forwards
+    }
+
+    #news-page .grid-item-bg canvas {
+        opacity: 1
+    }
+
+    .link-page {
+        opacity: 0
+    }
+
+    .link-page.show {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .close-news {
+        opacity: 0;
+        pointer-events: none
+    }
+
+    .colum-box-news.show .close-news {
+        animation: toRight;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        pointer-events: auto
+    }
+
+    .news-list.hide {
+        animation: fadeOut;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .show .subscribe {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show .hotline {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards
+    }
+
+    .show .nav-click {
+        animation: goLeft;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .show .logo {
+        animation: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards
+    }
+
+    .title-page.on-show h1 {
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards
+    }
+
+    .ani-text .go-page {
+        animation: none;
+        animation-duration: 0s;
+        animation-delay: 0s
+    }
+}

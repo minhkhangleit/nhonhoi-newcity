@@ -1,0 +1,1084 @@
+.slogan.slogan-section-1 {
+    width: 25vw;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    right: 17vw;
+    left: unset;
+    bottom: unset;
+    min-width: 125px
+}
+
+.slogan.slogan-section-1::after {
+    content: unset
+}
+
+.slogan.slogan-section-1::before {
+    background: url(../images/change/slogan.png) no-repeat center center/contain
+}
+
+.box-slider .group-central[data-name=home-location] {
+    background: url(../images/change/map-3-background.png) no-repeat;
+    background-position: right;
+    background-size: cover
+}
+
+.box-slider .group-central[data-name=home-location] .content-main::after {
+    content: unset
+}
+
+.box-slider .group-central[data-name=home-product] .pic-product {
+    width: 55vw;
+    padding-right: 4rem
+}
+
+.box-slider .group-central[data-name=home-product] .title-main h2::after {
+    content: unset
+}
+
+.box-slider .group-central[data-name=home-facilities] {
+    background: url(../images/change/tien-ich.jpeg) no-repeat center center/cover
+}
+
+.box-slider .group-central[data-name=home-facilities] .title-main h2::after {
+    content: unset
+}
+
+.box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home1 {
+    width: 55%;
+    border-radius: unset;
+    box-shadow: unset;
+    height: 55%;
+    position: absolute;
+    bottom: 10%;
+    left: 0px
+}
+
+.box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home2 {
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    bottom: 12%;
+    right: 12%
+}
+
+.box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home3 {
+    width: 45%;
+    height: 35% !important;
+    top: 19%;
+    right: 17%;
+    position: absolute;
+    margin: unset
+}
+
+.box-slider .group-central[data-name=contact] {
+    background: url(../images/change/about.jpeg) no-repeat center center/cover
+}
+
+.box-slider .group-central[data-name=contact]::before {
+    content: "";
+    background: unset;
+    background-color: rgba(0, 0, 0, .35);
+    transform: unset
+}
+
+.box-slider .group-central[data-name=contact] .box-contact-main::after {
+    content: unset
+}
+
+.box-slider .box-txt .view-more {
+    font-style: unset;
+    padding: 10px 15px;
+    display: inline-block
+}
+
+.box-slider .box-txt .view-more::first-letter {
+    text-transform: uppercase
+}
+
+.box-slider .box-txt .view-more::before {
+    content: unset
+}
+
+.pic-product__svg {
+    width: 100%;
+    max-width: 720px;
+    height: 100%
+}
+
+div.overlay-menu.show {
+    background: url(../images/change/about.jpeg) no-repeat center center/cover
+}
+
+div.overlay-menu.show::before {
+    content: "";
+    background: linear-gradient(270deg, rgba(2, 0, 36, 0.76) 0%, rgba(1, 0, 27, 0.4136029412) 30%, rgba(0, 0, 0, 0) 100%)
+}
+
+nav.navigation>span {
+    background: unset
+}
+
+.navigation.show>span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .15)
+}
+
+.footer .social .facebook::after {
+    background: url(../images/change/facebook-icon.png) no-repeat center center/cover
+}
+
+.footer .social .youtube::after {
+    background: url(../images/change/youtube-icon.png) no-repeat center center/cover
+}
+
+.hotline .hotline-href {
+    font-size: 30px;
+    position: relative;
+    top: 1px
+}
+
+.icon-register {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: .25rem;
+    background-image: url(../images/change/register.png)
+}
+
+.box-register {
+    display: flex;
+    align-items: center
+}
+
+.header .logo::after {
+    background: url(../images/change/logo-new.svg) no-repeat center center/contain
+}
+
+.header .nav-click span:nth-child(1)::after {
+    content: unset
+}
+
+.partner-info .item-logo img {
+    height: 80px
+}
+
+@media screen and (max-width: 1100px) {
+    .box-slider .group-central[data-name=home-product] .pic-product {
+        width: 100%;
+        margin: 1rem 0;
+        padding: unset
+    }
+
+    svg.pic-product__svg {
+        max-width: unset
+    }
+
+    div.overlay-menu.show::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0.18) 0%, rgba(1, 0, 27, 0.42) 28%, rgba(1, 0, 14, 0.45) 70%, rgba(0, 0, 0, 0.17) 100%) !important
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .overlay-menu::after {
+        content: "";
+        background: url(../images/change/logo-new.svg) 50%/18% no-repeat
+    }
+}
+
+@media screen and (max-width: 759px) {
+    a.load360 {
+        right: 16px;
+        right: 52px;
+        height: 30px;
+        left: unset;
+        width: 60px
+    }
+}
+
+@media only screen and (max-width: 759px) {
+    .icon-register {
+        width: 19px;
+        margin-left: 10px;
+        margin-right: -7px
+    }
+
+    .slogan.slogan-section-1 {
+        min-width: 240px;
+        top: 10%;
+        right: 5vw
+    }
+
+    .subscribe.box-register .icon-register {
+        width: 20px;
+        height: 20px
+    }
+
+    .subscribe.box-register span {
+        font-size: 10px
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .icon-register {
+        width: 30px;
+        height: 30px
+    }
+
+    .hotline .hotline-href {
+        font-size: 20px
+    }
+
+    .box-slider .group-central[data-name=home-facilities] .box-facilities {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 1.2rem
+    }
+
+    .box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home1 {
+        position: unset;
+        width: 70%;
+        margin: unset;
+        height: 180px
+    }
+
+    .box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home2 {
+        width: 55%;
+        height: 180px;
+        position: relative;
+        bottom: unset;
+        right: unset;
+        top: 20px
+    }
+
+    .box-slider .group-central[data-name=home-facilities] .box-facilities .item-faci-home3 {
+        width: 55%;
+        height: 180px !important;
+        position: relative;
+        bottom: unset;
+        right: unset;
+        top: unset
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .partner-info .item-logo img {
+        height: 65px
+    }
+}
+
+@media screen and (max-width: 1366) {
+    .partner-info .item-logo img {
+        height: 60px
+    }
+}
+
+.group-central[data-name=about-info] .bg-cover::after {
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0) 60%)
+}
+
+.group-central[data-name=about-overview] .svg-bg svg,
+.group-central[data-name=about-idea] .svg-bg svg {
+    opacity: .4
+}
+
+.group-central[data-name=about-investor] .title-main h2,
+.group-central[data-name=about-developer] .title-main h2 {
+    font-size: 2vw
+}
+
+.group-central[data-name=about-investor] .title-main h2::after,
+.group-central[data-name=about-investor] .title-main h2::before,
+.group-central[data-name=about-developer] .title-main h2::after,
+.group-central[data-name=about-developer] .title-main h2::before {
+    content: " ";
+    width: 40px;
+    height: 1px;
+    margin: 0 20px 20px 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: #ffdd80
+}
+
+@media screen and (min-width: 1100px) {
+
+    .group-central[data-name=about-investor] .title-main h2::after,
+    .group-central[data-name=about-investor] .title-main h2::before,
+    .group-central[data-name=about-developer] .title-main h2::after,
+    .group-central[data-name=about-developer] .title-main h2::before {
+        transform: scale3d(0, 1, 1);
+        animation: goWidth;
+        animation-duration: 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: forwards
+    }
+}
+
+.group-central[data-name=about-developer],
+.group-central[data-name=about-investor],
+.group-central[data-name=about-facilities],
+.group-central[data-name=library-album],
+.group-central[data-name=library-video] {
+    background: url("../images/change/about.jpeg") no-repeat center center/cover
+}
+
+.group-central[data-name=about-developer]::before,
+.group-central[data-name=about-investor]::before,
+.group-central[data-name=about-facilities]::before,
+.group-central[data-name=library-album]::before,
+.group-central[data-name=library-video]::before {
+    background: radial-gradient(#05232e, transparent);
+    transform: unset
+}
+
+.group-central[data-name=about-developer] .content-main .box-a-main::after,
+.group-central[data-name=about-investor] .content-main .box-a-main::after,
+.group-central[data-name=about-facilities] .content-main .box-a-main::after,
+.group-central[data-name=library-album] .content-main .box-a-main::after,
+.group-central[data-name=library-video] .content-main .box-a-main::after {
+    content: unset
+}
+
+.group-central[data-name=library-album] .container-main::before,
+.group-central[data-name=library-video] .container-main::before {
+    content: unset
+}
+
+.group-central[data-name=library-video]::before {
+    content: unset
+}
+
+.about-facilities__box h2 {
+    font-weight: 700;
+    font-size: 2.2vw;
+    display: block;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffdd80;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #bd8504 0, #ffdd80 50%, #bd8504 100%)
+}
+
+.about-facilities__box h2::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffdd80;
+    width: 50px;
+    height: 1px;
+    margin: 0 10px 3px 0
+}
+
+.about-facilities__box h2::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffdd80;
+    width: 50px;
+    height: 1px;
+    margin: 0 0 3px 10px
+}
+
+.about-facilities__box .about-facilities__partner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr))
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-facilities__box .about-facilities__partner {
+        grid-template-columns: 1fr
+    }
+}
+
+.about-facilities__box .about-facilities__partner .partner-info {
+    margin-top: unset
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-facilities__box .about-facilities__partner .partner-info:first-child {
+        margin-top: 4vh
+    }
+}
+
+.about-facilities__box .about-facilities__partner .last-child {
+    grid-column: span 2;
+    margin: 4vh 2vw
+}
+
+.about-facilities__box .about-facilities__partner .last-child .item-logo img {
+    height: 65px
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-facilities__box .about-facilities__partner .last-child {
+        grid-column: span 1
+    }
+}
+
+.about-facilities__box .about-facilities__partner .title-yellow::before,
+.about-facilities__box .about-facilities__partner .title-yellow::after {
+    content: unset
+}
+
+.about-facilities__box .about-facilities__partner .item-logo img {
+    height: 80px
+}
+
+.group-central[data-name=contact] .box-contact-main {
+    top: 7vh
+}
+
+@media only screen and (max-width: 1100px) {
+    .group-central[data-name=contact] .box-contact-main {
+        top: unset
+    }
+}
+
+.group-central[data-name=contact] .box-contact-main .company-info {
+    margin: 0 auto 2rem
+}
+
+.group-central[data-name=contact] .box-contact-main .company-info .item-logo {
+    margin: 0 0 2rem
+}
+
+.group-central[data-name=contact] .box-contact-main .partner-info img {
+    height: 75px
+}
+
+#location-page .group-central[data-name=location] {
+    background: url(../images/change/map-3-background.png) no-repeat;
+    background-position: right;
+    background-size: cover
+}
+
+#location-page .group-central[data-name=location] .content-main::after {
+    content: unset
+}
+
+#location-page .group-central[data-name=location]::before {
+    content: unset
+}
+
+#location-page .group-central[data-name=location] .compass {
+    right: unset;
+    left: 50px;
+    background: url(../images/change/location/compass.svg) no-repeat center center/contain
+}
+
+#location-page .group-central[data-name=location] .buttons .pic-zoom-in {
+    background: transparent
+}
+
+#location-page .group-central[data-name=location] .buttons .pic-zoom-in::after {
+    background: url(../images/change/location/zoom-in.svg) no-repeat 50%/80%
+}
+
+#location-page .group-central[data-name=location] .buttons .pic-zoom-out {
+    background: transparent
+}
+
+#location-page .group-central[data-name=location] .buttons .pic-zoom-out::after {
+    background: url(../images/change/location/zoom-out.svg) no-repeat 50%/80%
+}
+
+.group-central[data-name=news] {
+    background: url(../images/change/about.jpeg) no-repeat center center/cover
+}
+
+.group-central[data-name=news]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #020024;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(1, 0, 27, 0.2511379552) 46%, rgba(1, 0, 14, 0.3659838936) 77%, rgba(0, 0, 0, 0.5368522409) 100%)
+}
+
+.group-central.product-section .map-background {
+    background-size: 100% 90%
+}
+
+.group-central.product-section .title-main-1 {
+    text-transform: uppercase
+}
+
+.group-central.product-section .title-main-1 h2 {
+    color: #ebc161;
+    -webkit-text-fill-color: #ebc161;
+    background-image: unset
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.product-section .title-main-1 h2 {
+        padding-top: 1rem;
+        -webkit-text-fill-color: #000;
+        background-image: unset;
+        color: #000
+    }
+}
+
+.group-central.product-section .compass1 {
+    right: unset;
+    top: 20%;
+    left: 15px;
+    background: url(../images/change/location/compass.svg) no-repeat center center/contain
+}
+
+.group-central.product-section[data-name=product-section1] .product-name .product-detail h3,
+.group-central.product-section[data-name=product-section1] .product-name .product-detail p {
+    text-shadow: unset;
+    color: #fff
+}
+
+.group-central.product-section[data-name=product-section1] .point-01 {
+    top: 55%
+}
+
+.group-central.product-section[data-name=product-section1] .point-01 .product-detail {
+    background: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section1] .point-01 .product-detail h3,
+.group-central.product-section[data-name=product-section1] .point-01 .product-detail p {
+    color: #000
+}
+
+.group-central.product-section[data-name=product-section1] .point-01 .zoom.box-pro::after {
+    background-color: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section1] .point-02 .product-detail {
+    background: #f28513
+}
+
+.group-central.product-section[data-name=product-section1] .point-02 .zoom.box-pro::after {
+    background-color: #f28513
+}
+
+.group-central.product-section[data-name=product-section2] .product-name .product-detail h3,
+.group-central.product-section[data-name=product-section2] .product-name .product-detail p {
+    text-shadow: unset;
+    color: #fff
+}
+
+.group-central.product-section[data-name=product-section2] .point-01 {
+    top: 56%;
+    left: 40%;
+    background: unset
+}
+
+.group-central.product-section[data-name=product-section2] .point-01 .product-detail {
+    background: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section2] .point-01 .product-detail h3,
+.group-central.product-section[data-name=product-section2] .point-01 .product-detail p {
+    color: #000
+}
+
+.group-central.product-section[data-name=product-section2] .point-01 .zoom.box-pro::after {
+    background-color: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section2] .point-02 {
+    top: 23%;
+    left: 50%;
+    background: unset
+}
+
+.group-central.product-section[data-name=product-section2] .point-02 .product-detail {
+    background: #f28513
+}
+
+.group-central.product-section[data-name=product-section2] .point-02 .zoom.box-pro::after {
+    background-color: #f28513
+}
+
+@media screen and (max-width: 1100px) {
+
+    .group-central.product-section[data-name=product-section2] .point-01,
+    .group-central.product-section[data-name=product-section2] .point-02 {
+        left: auto;
+        top: auto
+    }
+}
+
+.group-central.product-section[data-name=product-section3] .product-name .product-detail h3,
+.group-central.product-section[data-name=product-section3] .product-name .product-detail p {
+    text-shadow: unset;
+    color: #fff
+}
+
+.group-central.product-section[data-name=product-section3] .point-01 {
+    top: 57%;
+    left: 53%;
+    background: unset
+}
+
+.group-central.product-section[data-name=product-section3] .point-01 .product-detail {
+    background: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section3] .point-01 .product-detail h3,
+.group-central.product-section[data-name=product-section3] .point-01 .product-detail p {
+    color: #000
+}
+
+.group-central.product-section[data-name=product-section3] .point-01 .zoom.box-pro::after {
+    background-color: #f1fb12
+}
+
+.group-central.product-section[data-name=product-section3] .point-02 {
+    top: 20%;
+    left: 50%;
+    background: unset
+}
+
+.group-central.product-section[data-name=product-section3] .point-02 .product-detail {
+    background: #f28513
+}
+
+.group-central.product-section[data-name=product-section3] .point-02 .zoom.box-pro::after {
+    background-color: #f28513
+}
+
+@media screen and (max-width: 1100px) {
+
+    .group-central.product-section[data-name=product-section3] .point-01,
+    .group-central.product-section[data-name=product-section3] .point-02 {
+        left: auto;
+        top: auto
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .facilities-page__box .title-page {
+        top: 70px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .facilities-page__box .title-page {
+        top: 20px
+    }
+}
+
+.group-central.facilities-section .map-background {
+    background-size: 100% 90%
+}
+
+.group-central.facilities-section .compass1 {
+    right: unset;
+    top: 20%;
+    left: 15px;
+    background: url(../images/change/location/compass.svg) no-repeat center center/contain
+}
+
+.group-central.facilities-section .all-dot .dot-num {
+    background-color: #ffdd80;
+    color: #333;
+    border-color: #333
+}
+
+.group-central.facilities-section .right-faci {
+    width: 320px;
+    max-width: 100%;
+    right: 60px
+}
+
+@media screen and (max-width: 1440px) {
+    .group-central.facilities-section .right-faci {
+        top: 55%
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .right-faci {
+        right: unset;
+        width: 100%
+    }
+}
+
+.group-central.facilities-section .right-faci .title-main-1 h2 {
+    text-transform: uppercase;
+    font-size: 1.8vw
+}
+
+@media screen and (max-width: 1440px) {
+    .group-central.facilities-section .right-faci .title-main-1 h2 {
+        font-size: 1.4rem
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .right-faci .title-main-1 h2 {
+        padding-top: 1rem;
+        -webkit-text-fill-color: #fff;
+        background-image: unset;
+        color: #fff
+    }
+}
+
+.group-central.facilities-section .note-facilities {
+    flex-wrap: nowrap
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .note-facilities {
+        padding: 1.2rem 0
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .note-facilities ul {
+        padding: 0 10px
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .group-central.facilities-section .note-facilities ul li {
+        margin-bottom: 2px
+    }
+}
+
+.group-central.facilities-section .note-facilities a {
+    display: flex;
+    align-items: center
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .note-facilities a {
+        height: 30px
+    }
+}
+
+.group-central.facilities-section .note-facilities .set-number {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #333;
+    font-size: 11px;
+    line-height: 25px;
+    background-color: #ffdd80;
+    color: #333;
+    border: 1px solid;
+    margin-right: 1rem;
+    flex-shrink: 0
+}
+
+.group-central.facilities-section .note-facilities h3 {
+    white-space: pre-wrap
+}
+
+.group-central.facilities-section .note-color {
+    margin-top: 2rem
+}
+
+@media screen and (max-width: 1440px) {
+    .group-central.facilities-section .note-color {
+        margin-top: 1rem
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .group-central.facilities-section .note-color {
+        margin-top: unset
+    }
+}
+
+.group-central.facilities-section .note-color .color-yellow,
+.group-central.facilities-section .note-color .color-orange {
+    font-weight: bold
+}
+
+@media screen and (max-width: 1440px) {
+
+    .group-central.facilities-section .note-color .color-yellow,
+    .group-central.facilities-section .note-color .color-orange {
+        font-size: 13px
+    }
+}
+
+.group-central.facilities-section .note-color .color-yellow::before,
+.group-central.facilities-section .note-color .color-orange::before {
+    border-radius: unset;
+    border: 1px solid;
+    width: 60px
+}
+
+@media screen and (max-width: 1440px) {
+
+    .group-central.facilities-section .note-color .color-yellow::before,
+    .group-central.facilities-section .note-color .color-orange::before {
+        width: 55px;
+        height: 25px
+    }
+}
+
+.group-central.facilities-section .note-color .color-yellow::before {
+    background-color: #f1fb12
+}
+
+.group-central.facilities-section .note-color .color-orange::before {
+    background-color: #fd8813
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-01 {
+    left: 466px;
+    top: 229px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-01-1 {
+    left: 705px;
+    top: 570px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-02 {
+    left: 780px;
+    top: 860px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-03 {
+    left: 700px;
+    top: 340px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-04 {
+    left: 635px;
+    top: 965px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05 {
+    left: 727px;
+    top: 799px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-1 {
+    left: 440px;
+    top: 350px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-2 {
+    left: 420px;
+    top: 480px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-4 {
+    left: 715px;
+    top: 490px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-5 {
+    left: 870px;
+    top: 590px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-6 {
+    left: 955px;
+    top: 550px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-7 {
+    left: 615px;
+    top: 1030px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-8 {
+    left: 780px;
+    top: 1060px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-9 {
+    left: 878px;
+    top: 699px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-10 {
+    left: 1005px;
+    top: 760px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-11 {
+    left: 540px;
+    top: 467px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-05-12 {
+    left: 765px;
+    top: 384px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-06 {
+    left: 829px;
+    top: 666px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-06-1 {
+    left: 420px;
+    top: 290px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-07 {
+    left: 563px;
+    top: 730px
+}
+
+.group-central.facilities-section[data-name=facilities-section1] .dot-08 {
+    left: 740px;
+    top: 1180px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-01 {
+    left: 1042px;
+    top: 321px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-02 {
+    top: 432px;
+    left: 473px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-03 {
+    top: 457px;
+    left: 603px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-04 {
+    left: 569px;
+    top: 828px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-05 {
+    left: 468px;
+    top: 712px
+}
+
+.group-central.facilities-section[data-name=facilities-section2] .dot-06 {
+    top: 468px;
+    left: 932px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-01 {
+    top: 726px;
+    left: 599px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-01-1 {
+    left: 838px;
+    top: 913px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-01-2 {
+    top: 888px;
+    left: 202px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-02 {
+    left: 572px;
+    top: 615px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-03 {
+    left: 593px;
+    top: 834px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-04 {
+    top: 700px;
+    left: 534px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05 {
+    top: 839px;
+    left: 731px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-1 {
+    left: 113px;
+    top: 889px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-2 {
+    left: 254px;
+    top: 836px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-3 {
+    left: 441px;
+    top: 788px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-4 {
+    top: 958px;
+    left: 783px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-5 {
+    top: 1005px;
+    left: 793px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-05-6 {
+    top: 772px;
+    left: 644px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-06 {
+    top: 738px;
+    left: 743px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-07 {
+    top: 869px;
+    left: 903px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-08 {
+    top: 241px;
+    left: 814px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-09 {
+    left: 1179px;
+    top: 294px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-010 {
+    top: 657px;
+    left: 50px
+}
+
+.group-central.facilities-section[data-name=facilities-section3] .dot-010-1 {
+    left: 1004px;
+    top: 1024px
+}
+
+.register-form #register .require-col {
+    background-color: #00495e
+}
+
+/*# sourceMappingURL=change.css.map */
