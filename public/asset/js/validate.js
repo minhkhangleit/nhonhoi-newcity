@@ -799,46 +799,46 @@ function validateregister() {
     return e
 }('(2($){$.c.f=2(p){p=$.d({g:"!@#$%^&*()+=[]\\\\\\\';,/{}|\\":<>?~`.- ",4:"",9:""},p);7 3.b(2(){5(p.G)p.4+="Q";5(p.w)p.4+="n";s=p.9.z(\'\');x(i=0;i<s.y;i++)5(p.g.h(s[i])!=-1)s[i]="\\\\"+s[i];p.9=s.O(\'|\');6 l=N M(p.9,\'E\');6 a=p.g+p.4;a=a.H(l,\'\');$(3).J(2(e){5(!e.r)k=o.q(e.K);L k=o.q(e.r);5(a.h(k)!=-1)e.j();5(e.u&&k==\'v\')e.j()});$(3).B(\'D\',2(){7 F})})};$.c.I=2(p){6 8="n";8+=8.P();p=$.d({4:8},p);7 3.b(2(){$(3).f(p)})};$.c.t=2(p){6 m="A";p=$.d({4:m},p);7 3.b(2(){$(3).f(p)})}})(C);', 53, 53, "||function|this|nchars|if|var|return|az|allow|ch|each|fn|extend||alphanumeric|ichars|indexOf||preventDefault||reg|nm|abcdefghijklmnopqrstuvwxyz|String||fromCharCode|charCode||alpha|ctrlKey||allcaps|for|length|split|1234567890|bind|jQuery|contextmenu|gi|false|nocaps|replace|numeric|keypress|which|else|RegExp|new|join|toUpperCase|ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("|"), 0, {}));
 var httpserver = $(".httpserver").text();
-$("#btn-contact-submit").click(function() {
-    if (1 == validatecontact()) {
-        $("#btn-contact-submit").attr("disabled", "disabled"), $("#btn-contact-submit").css("pointer-events", "none"), $(".loadx").length || $("body").append('<div class="loadx" style="display:block"></div>');
-        var e = $("#contact").serialize();
-        return $.ajax({
-            type: "POST",
-            url: httpserver + "send-contact.html",
-            data: e,
-            dataType: "json",
-            success: function(e) {
-                $(".loadx").remove(), "200" == e.status ? (document.getElementById("contact").reset(), window.location = httpserver + "thank-you.html") : $(".overlay-dark").after("<div  class='contact-success color-red'>" + e.message + "</div>"), grecaptcha.reset(), $("#btn-contact-submit").removeAttr("disabled"), $("#btn-contact-submit").css("pointer-events", "auto"), setTimeout(hidemsg, 5e3)
-            }
-        }), !1
-    }
-    return $(".formError").click(function() {
-        $(this).remove()
-    }), !1
-}), $("#btn-contact-reset").click(function() {
-    hidemsg(), hideerror()
-}), $("#phone").numeric(), $("#contact").keydown(function(e) {
-    $("textarea").is(":focus") || 13 == e.keyCode && $("#btn-contact-submit").trigger("click")
-}), $("#btn-register-submit").click(function() {
-    if (1 == validateregister()) {
-        $("#btn-register-submit").attr("disabled", "disabled"), $("#btn-register-submit").css("pointer-events", "none"), $(".loadx").length || $("body").append('<div class="loadx" style="display:block"></div>');
-        var e = $("#register").serialize();
-        return $.ajax({
-            type: "POST",
-            url: httpserver + "send-register-ajax.html",
-            data: e,
-            dataType: "json",
-            success: function(e) {
-                $(".loadx").remove(), "200" == e.status ? (document.getElementById("register").reset(), $(".register-form .close").trigger("click"), $(".overlay-dark").after("<div  class='contact-success color-blue'>" + e.message + "</div>")) : $(".overlay-dark").after("<div  class='contact-success color-red'>" + e.message + "</div>"), $("#btn-register-submit").removeAttr("disabled"), $("#btn-register-submit").css("pointer-events", "auto"), setTimeout(hidemsg, 5e3)
-            }
-        }), !1
-    }
-    return $(".formError").click(function() {
-        $(this).remove()
-    }), !1
-}), $("#btn-register-reset").click(function() {
-    hidemsg(), hideerror()
-}), $("#phoneregister").numeric(), $("#register").keydown(function(e) {
-    $("textarea").is(":focus") || 13 == e.keyCode && $("#btn-register-submit").trigger("click")
-});
+// $("#btn-contact-submit").click(function() {
+//     if (1 == validatecontact()) {
+//         $("#btn-contact-submit").attr("disabled", "disabled"), $("#btn-contact-submit").css("pointer-events", "none"), $(".loadx").length || $("body").append('<div class="loadx" style="display:block"></div>');
+//         var e = $("#contact").serialize();
+//         return $.ajax({
+//             type: "POST",
+//             url: httpserver + "send-contact.html",
+//             data: e,
+//             dataType: "json",
+//             success: function(e) {
+//                 $(".loadx").remove(), "200" == e.status ? (document.getElementById("contact").reset(), window.location = httpserver + "thank-you.html") : $(".overlay-dark").after("<div  class='contact-success color-red'>" + e.message + "</div>"), grecaptcha.reset(), $("#btn-contact-submit").removeAttr("disabled"), $("#btn-contact-submit").css("pointer-events", "auto"), setTimeout(hidemsg, 5e3)
+//             }
+//         }), !1
+//     }
+//     return $(".formError").click(function() {
+//         $(this).remove()
+//     }), !1
+// }), $("#btn-contact-reset").click(function() {
+//     hidemsg(), hideerror()
+// }), $("#phone").numeric(), $("#contact").keydown(function(e) {
+//     $("textarea").is(":focus") || 13 == e.keyCode && $("#btn-contact-submit").trigger("click")
+// }), $("#btn-register-submit").click(function() {
+//     if (1 == validateregister()) {
+//         $("#btn-register-submit").attr("disabled", "disabled"), $("#btn-register-submit").css("pointer-events", "none"), $(".loadx").length || $("body").append('<div class="loadx" style="display:block"></div>');
+//         var e = $("#register").serialize();
+//         return $.ajax({
+//             type: "POST",
+//             url: httpserver + "send-register-ajax.html",
+//             data: e,
+//             dataType: "json",
+//             success: function(e) {
+//                 $(".loadx").remove(), "200" == e.status ? (document.getElementById("register").reset(), $(".register-form .close").trigger("click"), $(".overlay-dark").after("<div  class='contact-success color-blue'>" + e.message + "</div>")) : $(".overlay-dark").after("<div  class='contact-success color-red'>" + e.message + "</div>"), $("#btn-register-submit").removeAttr("disabled"), $("#btn-register-submit").css("pointer-events", "auto"), setTimeout(hidemsg, 5e3)
+//             }
+//         }), !1
+//     }
+//     return $(".formError").click(function() {
+//         $(this).remove()
+//     }), !1
+// }), $("#btn-register-reset").click(function() {
+//     hidemsg(), hideerror()
+// }), $("#phoneregister").numeric(), $("#register").keydown(function(e) {
+//     $("textarea").is(":focus") || 13 == e.keyCode && $("#btn-register-submit").trigger("click")
+// });
