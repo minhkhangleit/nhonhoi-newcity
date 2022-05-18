@@ -1387,7 +1387,7 @@ function ContentLoad(){
 			}
 		}else{
 			if($('.group-central.current').length){
-				var Top = $('.group-central.current').offsetTop() - 60;
+				var Top = $('.group-central.current').offset().top - 60;
 				$('html, body').stop().animate({ scrollTop: Top}, 1000, 'easeInOutExpo', function(){});
 			}
 		}
