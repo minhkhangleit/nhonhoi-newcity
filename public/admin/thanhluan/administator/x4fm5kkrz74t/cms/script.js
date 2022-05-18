@@ -50,7 +50,7 @@ function converData(firebaseData) {
             customerData.push(firebaseData[key]);
         }
     }
-    customerData.sort();
+    customerData.sort().reverse();
     tableBody.innerHTML = renderTableBody(customerData);
 }
 
