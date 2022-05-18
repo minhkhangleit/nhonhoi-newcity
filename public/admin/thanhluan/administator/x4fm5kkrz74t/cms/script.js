@@ -23,35 +23,42 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase(app);
 var customerData = [];
-
+// Get element
 const tableBody = document.getElementById('table-body');
-console.log(tableBody)
-function updateCustomer(customer) {
-    return set(ref(db, `customer/${customer.id}`), {
-        ...customer,
-    })
+
+function deleteCustomer(customerId) {
+    return set(ref(db, `customer/${customerId}/isdelete`), true);
 }
 
 const dbRef = ref(db);
-get(child(dbRef, `customer`)).then((snapshot) => {
-    if (snapshot.exists()) {
-        console.log(snapshot.val());
-        converData(snapshot.val());
-    } else {
-        console.log("No data available");
-    }
-}).catch((error) => {
-    console.error(error);
-});
+function fetchData() {
+    customerData = [];
+    get(child(dbRef, `customer`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log(snapshot.val());
+            converData(snapshot.val());
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+}
+
+fetchData();
+setInterval(fetchData, 60000);
 
 function converData(firebaseData) {
     for (var key in firebaseData) {
         if (firebaseData.hasOwnProperty(key)) {
-            customerData.push(firebaseData[key]);
+            let record = firebaseData[key];
+            if(record.isdelete == null || !record.isdelete)
+                customerData.push(firebaseData[key]);
         }
     }
     customerData.sort().reverse();
     tableBody.innerHTML = renderTableBody(customerData);
+    addEventDelete();
 }
 
 function renderTableBody(data) {
@@ -66,7 +73,25 @@ function renderTableBody(data) {
             <td>${customer.emailregister}</td>
             <td>${customer.phoneregister}</td>
             <td>${customer.commentregister}</td>
+            <td>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger btn-action" data-id="${customer.id}">Xóa</button>
+                </div>
+            </td>
         </tr>`;
     }, '');
 }
 
+function addEventDelete() {
+    const btnAction = document.getElementsByClassName('btn-action');
+    console.log(btnAction);
+    for(let btn of btnAction) {
+        btn.addEventListener('click', function() {
+            let isConfirm = confirm("Chắc chắn muốn xóa?");
+            if(isConfirm) {
+                deleteCustomer(this.dataset.id);
+                setTimeout(fetchData, 1000);
+            }     
+        })
+    }
+}
