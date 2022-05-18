@@ -2255,7 +2255,8 @@ $(document).bind('scroll', function() {
 		   
 		   var Bottom = $('.group-central[data-name="contact"]').offset().top;
 		   if ($('#home-page').length) {
-			    if(currenttop >= Bottom && Click == 0) {
+			    if(currenttop >= Bottom && Click == 0 && $(".register-form .show").length == 0) {
+					console.log("xem log lam gi?")
 		          setTimeout(function(){ $('.subscribe').trigger('click');},500);
 			   }
 				  
